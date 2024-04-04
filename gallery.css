@@ -1,0 +1,156 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    /* Light gray background */
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-content a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar-content a:hover {
+    color: #3498db;
+}
+
+header {
+    background-color: #000000b2;
+    /* Black header background */
+    color: #fff;
+    /* White text */
+    text-align: center;
+    padding: 20px;
+}
+
+section#gallery {
+    text-align: center;
+    padding: 40px;
+}
+
+.slideshow-container {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+    /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle box shadow */
+}
+
+.caption {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent white background for captions */
+    color: #333;
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+    /* Rounded corners, except at the top */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    /* Light box shadow */
+    font-weight: bold;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: #fff;
+    /* White text */
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    background-color: #000;
+    /* Black background for buttons */
+    border: none;
+    border-radius: 4px;
+    /* Rounded corners for buttons */
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #333;
+    /* Darker black on hover */
+}
+
+footer {
+    background-image: linear-gradient(to right, #333, #555);
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+}
+
+.footer-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: hotpink;
+}
+
+.footer-subheading {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: hotpink;
+}
+
+/* Add more specific styles as needed */
+.footer-links a i {
+    margin-right: 5px;
+    font-size: 1.2rem;
+}
